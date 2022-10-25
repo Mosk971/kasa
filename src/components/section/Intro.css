@@ -1,0 +1,37 @@
+.homeIntroContainer{         
+    padding: 20px 20px 0 20px;
+}
+
+
+.homeIntroBackground{
+    width: 100%;
+    max-height: 111px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.homeIntroBackground img{
+    filter: brightness(60%);
+    object-fit: cover;
+    max-height: 223px;
+    min-height: 111px;
+      
+}
+
+
+.titleContainer{        
+    display: flex;
+    position: absolute;
+    top: 30px;
+    flex-wrap: wrap;
+    padding: 0 95px 30px 15px;
+}
+
+.introTitle{
+    font-family:'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
