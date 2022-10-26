@@ -3,7 +3,7 @@ import './Home.css';
 import Header from '../components/header/Header';
 import Intro from '../components/section/Intro';
 import Annonces from '../components/annonces/Annonces';
-
+import Footer from '../components/footer/Footer';
 
 
 function Home() {
@@ -12,6 +12,7 @@ function Home() {
       <Header />
       <Intro /> 
       <Annonces />
+      <Footer />
     </React.Fragment>       
     
   );

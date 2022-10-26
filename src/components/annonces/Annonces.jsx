@@ -1,23 +1,30 @@
 import React from "react";
 import "./Annonces.css";
-import annonceData from "../../constant/data/Data";
+import annonceData from "../../assets/data/Data";
 
 
 
 
 function Annonces() {      
+ 
+    return(
+      <section>        
       
-      annonceData.map((annonce) => {
-        
-        return (
-          <div className="card" >            
-            <div className="cardContent">              
-                <img src={annonce.cover} alt="annonce" />
-                <h3 className="cardTitle">{annonce.title}</h3>
+        {annonceData.map((logement, k) => {
+          return (
+            <div key={logement.id} className="annonceContainer">
+              <div className="annonceImage">
+                <img src={logement.cover} alt="logement" />
+              </div>
+              <div className="annonceTitle">
+                <h2>{logement.title}</h2>                
+              </div>
             </div>
-          </div>
-        )
-      })
+          );
+        })}
+      </section>
+    )
+  
 }  
 
 

@@ -1,0 +1,21 @@
+.footerContainer{    
+    background-color: black;
+    min-height: 209px;
+    
+}
+
+.footerBody{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 209px;    
+}
+.footerBody p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+}
