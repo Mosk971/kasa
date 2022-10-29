@@ -1,6 +1,6 @@
 import React from "react";
 import './Intro.css';
-import homeBackground from "../../assets/images/homeBackground.png";
+import homeBackground from "../../../assets/images/homeBackground.png";
 
 function Intro() {
   return (    

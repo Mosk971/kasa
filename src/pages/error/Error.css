@@ -1,0 +1,31 @@
+.error404Msg{
+    background-color: #fff;
+    text-align: center;
+    height: 100vh;
+}
+
+.text404{
+    font-size: 96px;
+    font-weight: 700;
+    color:  #FF6060;
+}
+
+.Errormessage{
+    font-size: 18px;
+    font-weight: 500;
+    color:  #FF6060;
+}
+
+.wrapper404{
+    padding-top: 30vh
+}
+
+.returnHome{
+    display: block;
+    margin-top: 150px;
+    font-size: 18px;
+    font-weight: 500;
+    color:  #FF6060;
+    text-decoration: underline;
+    
+}

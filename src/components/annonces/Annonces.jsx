@@ -8,21 +8,23 @@ import annonceData from "../../assets/data/Data";
 function Annonces() {      
  
     return(
-      <section>        
-      
-        {annonceData.map((logement, k) => {
-          return (
-            <div key={logement.id} className="annonceContainer">
-              <div className="annonceImage">
-                <img src={logement.cover} alt="logement" />
-              </div>
-              <div className="annonceTitle">
-                <h2>{logement.title}</h2>                
-              </div>
-            </div>
-          );
-        })}
+      <section> 
+        <div className="greyCardsBackground">     
+          {annonceData.map((logement, k) => {
+            return (            
+                <a href={"/productPage/" + logement.id} key={logement.id} className="annonceContainer">
+                  <div className="annonceImage">
+                    <img src={logement.cover} alt="logement" />
+                  </div>
+                  <div className="annonceTitle">
+                    <h2>{logement.title}</h2>
+                  </div>
+                </a>            
+            );
+          })}
+        </div>
       </section>
+      
     )
   
 }  

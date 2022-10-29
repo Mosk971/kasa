@@ -35,17 +35,20 @@
 
 
 .titleContainer{        
-    display: flex;    
-    flex-wrap: wrap;
-    padding-right: 35%;       
+    display: flex;
+    padding: 0 110px 0 10px;    
+    /* flex-wrap: wrap; */
+    /* padding-right: 35%;        */
     margin: auto;
+    ;
 }
 
 .introTitle{
     font-family:'Montserrat', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 24px;
     color: #fff;
+    flex-wrap: wrap;
     
 }

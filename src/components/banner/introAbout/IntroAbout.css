@@ -1,0 +1,25 @@
+.bannerWrapper{ 
+    display: flex;
+    
+}
+
+.introImage{
+    position: relative;
+    background-image: url("../../../assets/images/introaboutSmall.png");
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-size: cover;    
+    min-height: 223px;    
+    min-width: 336px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+/* .filterAbout{
+    position: absolute;   
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 223px;    
+    min-width: 336px;
+    border-radius: 10px;
+    margin: 20px auto;
+} */
