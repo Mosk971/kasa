@@ -8,17 +8,18 @@ import Home from './pages/home/Home';
 import Footer from './components/footer/Footer';
 import Error from './pages/error/Error';
 import About from './pages/about/About';
-
+import House from './pages/house/House';
 
 function App() {
   return (
     <BrowserRouter>        
       <Header />
       <Routes>
-        <Route path="/home" element={<Home />} />   
-        <Route path="" element= {<Navigate to="/home" />}/>
+        <Route path="/home"   element={<Home />} />   
+        <Route path=""        element= {<Navigate to="/home" />}/>
         <Route path="/about"        element= {<About />}/>
-        <Route path="*" element={<Error />} />
+        <Route path="/house/:id"       element={<House />} />
+        <Route path="*"       element={<Error />} />
       </Routes>
       <Footer />
      

@@ -12,7 +12,7 @@ function Annonces() {
         <div className="greyCardsBackground">     
           {annonceData.map((logement, k) => {
             return (            
-                <a href={"/productPage/" + logement.id} key={logement.id} className="annonceContainer">
+                <a href={"/House/" + logement.id} key={logement.id} className="annonceContainer">
                   <div className="annonceImage">
                     <img src={logement.cover} alt="logement" />
                   </div>
