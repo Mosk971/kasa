@@ -7,8 +7,8 @@ function Navbar() {
   return (
     <nav className="header__nav">
       <ul>
-        <NavLink to='/home' activeClassName='active' className="navList">ACCUEIL</NavLink>
-        <NavLink to="/About" activeClassName='active' className="navList">A PROPOS</NavLink>        
+        <NavLink to='/home' activeclassname='active' className="navList">ACCUEIL</NavLink>
+        <NavLink to="/About" activeclassname='active' className="navList">A PROPOS</NavLink>        
       </ul>
     </nav>
   );

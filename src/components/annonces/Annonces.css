@@ -1,15 +1,19 @@
-.greyCardContainer{
-    
+.greyCardsBackground{
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 
 .annonceContainer{
     position: relative;
-    
+    margin: 20px auto;
 }
 
 .annonceImage{
-    padding: 20px;
+    display: flex;
     
 }
 
@@ -19,13 +23,12 @@
     height: auto;
     max-width: 340px;
     border-radius: 10px;
-;
 }
 
 .annonceTitle{
     position: absolute;
-    bottom: 30px;
-    left: 20px;
+    bottom: 15px;
+    left: 5px;
     /* text-align: left; */
     padding-left: 10px;    
 }
@@ -38,3 +41,57 @@
     text-decoration: none;
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .greyCardsBackground{
+        background: #F7F7F7;
+        border-radius:  10px;
+        margin: 20px auto;
+        max-width: 740px;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .annonceImage img{
+        min-width: 340px;
+        min-height: 340px;
+        object-fit: cover;
+    }
+
+    
+
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    .greyCardsBackground{
+        background: #F7F7F7;
+        border-radius:  10px;
+        margin: 30px auto;        
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 920px;
+     }
+
+     .annonceImage img{
+        min-width: 340px;
+        min-height: 340px;
+        object-fit: cover;
+    }
+
+    .annonceContainer{       
+        margin: 20px ;
+    }
+}
+
+@media all and (min-width: 1440px){
+    .greyCardsBackground{
+        background: #F7F7F7;
+        border-radius:  10px;
+        margin: 30px auto;        
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1240px;
+     }
+    
+}

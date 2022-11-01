@@ -15,11 +15,11 @@ function App() {
     <BrowserRouter>        
       <Header />
       <Routes>
-        <Route path="/home"   element={<Home />} />   
-        <Route path=""        element= {<Navigate to="/home" />}/>
+        <Route path="/home"      element={<Home />} />   
+        <Route path=""           element= {<Navigate to="/home" />}/>
         <Route path="/about"        element= {<About />}/>
         <Route path="/house/:id"       element={<House />} />
-        <Route path="*"       element={<Error />} />
+        <Route path="*"            element={<Error />} />
       </Routes>
       <Footer />
      

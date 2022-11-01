@@ -1,46 +1,31 @@
-.homeIntroContainer{         
-    padding: 20px 20px 0 20px;
+.homeIntro{
+    max-width: 355px;    
+    margin: 20px auto;
+    width: 100%;
+}
+.homeIntroContainer{ 
+    margin: auto;
+    
 }
 
 
 .homeIntroBackground{ 
-    /* background-image: url("../../assets/images/homeBackground.png"); */
-    /* background-image: linear-gradient(grey, transparent, grey), url("/static/media/homeBackground.efc1935eb81fc5e585f9.png"); */
     display: flex;
     align-items: center;
-    min-height: 111px;
+    min-height: 111px;        
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../../assets/images/homeBackground.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    border-radius: 10px; 
-    /* background: "linear-gradient(ro right, #ffffff, #019CAD)"; */
-
-    /* background-image: linear-gradient(grey, transparent, grey), url("/static/media/homeBackground.efc1935eb81fc5e585f9.png"); */
-   
-
-    /* max-height: 111px; */
-    /* position: relative; */
+    border-radius: 10px;    
+    mix-blend-mode: darken;    
 }
-
-/* .homeIntroBackground img{
-    border-radius: 15px;
-    overflow: hidden;
-    filter: brightness(60%);
-    object-fit: cover;
-    max-height: 223px;
-    min-height: 111px;
-    height: 100%;
-     
-} */
-
 
 .titleContainer{        
     display: flex;
-    padding: 0 110px 0 10px;    
-    /* flex-wrap: wrap; */
-    /* padding-right: 35%;        */
+    padding: 0 110px 0 10px;
     margin: auto;
-    ;
+    
 }
 
 .introTitle{
@@ -51,4 +36,62 @@
     color: #fff;
     flex-wrap: wrap;
     
+}
+
+
+
+
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+    .homeIntro{
+        max-width: 740px;    
+       
+    }
+
+    .titleContainer{
+        padding: 0;        
+    }
+
+    .titleContainer h1{
+        font-size: 24px;
+    }
+}
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    .homeIntro{
+        max-width: 920px;
+        max-height: 223px;
+    }
+
+    .homeIntroBackground{
+        min-height: 223px;
+    }
+    .titleContainer{
+        padding: 0;
+    }
+    .titleContainer h1{
+        font-size:350%;
+    }
+
+
+}
+
+@media all and (min-width: 1440px){
+    .homeIntro{
+        max-width: 1240px;
+        
+    }
+
+    .homeIntroBackground{
+        min-height: 223px;
+        width: 100%;
+    }
+    .titleContainer{
+        padding: 0;
+    }
+    .titleContainer h1{
+        font-size:350%;
+    }
 }
