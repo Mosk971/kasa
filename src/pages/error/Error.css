@@ -23,9 +23,48 @@
 .returnHome{
     display: block;
     margin-top: 150px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     color:  #FF6060;
     text-decoration: underline;
     
 }
+
+
+@media all and (min-width: 768px) {
+    .text404{
+        font-size: 120px;
+       } 
+    .Errormessage{
+        font-size: 24px;        
+    }
+    .returnHome{
+        font-size: 18px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    .text404{
+        font-size:200px;
+       } 
+
+    
+    
+}
+
+@media all and (min-width: 1440px){
+    .text404{
+        font-size: 288px;
+       } 
+
+       .Errormessage{
+        font-size: 36px;        
+    }
+    .returnHome{
+        font-size: 1_px;
+    }
+    
+    
+}
+

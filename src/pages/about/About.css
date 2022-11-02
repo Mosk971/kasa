@@ -1,8 +1,52 @@
+
 .collapseWrapper{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20%;
-    padding: 0 20px;
-    
+    justify-content: center;
+    margin: 20px auto;    
+    max-width: 355px ;
+
+}
+
+
+@media all and (min-width: 768px) {
+  .collapseWrapper {
+    max-width: 740px ;
+  }
+  .aboutWrapper .collapse-div{
+    font-size: 24px;
+    padding: 10px;
+  }
+} 
+
+@media all and (min-width: 1024px) {
+  .collapseWrapper {
+    max-width: 920px ;
+   
+  }
+  .aboutWrapper .collapse-btn{
+    border-radius: 5px;
+    max-height: 47px;
+  }
+
+  .aboutWrapper .collapse-content p {
+    font-size: 24px;
+    min-height: 0;
+  }
+
+}
+
+@media all and (min-width: 1440px) {
+
+    .collapseWrapper {
+        max-width: 1023px ;
+    }
+  .aboutWrapper .collapseWrapper .collapse-btn {
+    max-width: 1023px ;
+  }
 }
     
+
+        
+
+

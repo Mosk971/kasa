@@ -15,7 +15,7 @@ import Error    from "../error/Error";
 function House() {
   let { id } = useParams();
   // get the house from the data
-  let detailsLogement = annonceData.find((annonceData) => (annonceData.id === id)); 
+  let detailsLogement = annonceData.find((annonceData2) => (annonceData2.id === id)); 
   
   // check if the house exist
   if(detailsLogement !== undefined) {

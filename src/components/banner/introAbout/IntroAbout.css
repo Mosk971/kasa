@@ -5,10 +5,9 @@
 
 .introImage{
     position: relative;
-    background-image: url("../../../assets/images/introaboutSmall.png");
+    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/images/introaboutSmall.png");
     background-repeat: no-repeat;    
-    background-position: center;
-    background-size: cover;    
+    background-position: bottom ;    
     min-height: 223px;    
     min-width: 336px;
     border-radius: 10px;
@@ -23,3 +22,33 @@
     border-radius: 10px;
     margin: 20px auto;
 } */
+@media all and (min-width: 768px){
+    .introImage{
+        background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/images/introAbout.png");
+        background-position: center;
+        min-width: 740px ;
+        border-radius: 30px;
+    }
+}
+
+
+
+
+@media all and (min-width: 1024px){
+    .introImage{        
+        min-width: 920px ;
+    }
+}
+
+
+
+@media all and (min-width: 1440px){
+    .introImage{        
+        min-width: 1240px ;
+        
+    }
+    
+    
+    
+}
+

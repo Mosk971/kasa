@@ -1,0 +1,174 @@
+/* CONTAINER INFOS */
+.container-housing {
+    height: 100vh;
+}
+
+.container-infos {     
+    max-width: 355px;   
+    margin: 20px auto;
+    color:  #FF6060;   
+}
+
+
+.left-details h2 {
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.left-details p {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* OWNER INFO */
+.container-owner{
+    display: flex;
+    text-align: end;
+    
+}
+.right-details {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;    
+    
+}
+
+
+.owner-name  {
+    font-size: 12px;
+    margin: 0;
+    height: auto;
+    width: 60px;
+    
+}
+.owner-picture  {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+
+@media all and (min-width: 768px) {
+    .left-details{
+        display: flex;
+        flex-direction: column;
+       gap:5px;
+    }
+}
+    
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .container-infos { 
+        display: flex;    
+        max-width: 740px;
+        justify-content: space-between;
+    } 
+    .right-details{
+        flex-direction: column; 
+        margin: 0; 
+    }
+    
+    
+
+}
+
+@media all and (min-width: 1024px){
+    .container-owner{
+        gap: 20px;
+    }
+    
+    .container-rating{
+        margin-left:20px ;
+    }
+
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1439px){
+    .container-infos { 
+        display: flex;
+        justify-content: space-between;           
+        max-width: 920px;        
+    }
+    .container-owner{
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .left-details h2{
+        font-size: 25px;
+    }
+    .left-details p{
+        font-size: 18px;
+    }
+
+    .right-details{
+        flex-direction: column; 
+        margin: 0;
+    }
+
+    .owner-name  {
+        font-size: 18px;        
+        margin: 0;
+        height: auto;
+        width: 60px;
+        
+    }
+    .owner-picture  {
+        width: 64px;
+        height: 64px;
+        
+        
+    }
+    
+}
+
+@media all and (min-width: 1440px){
+    
+    .container-infos { 
+        display: flex;
+        justify-content: space-between;           
+        max-width: 1240px;        
+    }
+    .container-owner{
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .left-details h2{
+        font-size: 36px;
+    }
+    .left-details p{
+        font-size: 18px;
+    }
+
+    .right-details{
+        flex-direction: column; 
+        margin: 0;
+    }
+
+    .owner-name  {
+        font-size: 18px;        
+        
+        height: auto;
+        width: 60px;
+        
+    }
+    .owner-picture  {
+        width: 64px;
+        height: 64px;
+        
+        
+        
+    }
+    
+    
+}
+
